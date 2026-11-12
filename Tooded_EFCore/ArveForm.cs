@@ -101,7 +101,7 @@ namespace Tooded_EFCore
             try
             {
                 var mail = new MailMessage();
-                mail.From = new MailAddress("damianrud257@gmail.com");
+                mail.From = new MailAddress("");
                 mail.To.Add(email);
                 mail.Subject = "Arve";
                 mail.Body = "Arve on manuses.";
@@ -110,7 +110,7 @@ namespace Tooded_EFCore
                 var smtp = new SmtpClient("smtp.gmail.com", 587)
                 {
                     Credentials = new NetworkCredential(
-                        "damianrud257@gmail.com", "parool"),
+                        "", "parool"),
                     EnableSsl = true
                 };
 
